@@ -1,23 +1,26 @@
 package com.hkm.r141ez.details;
 
+import android.app.Fragment;
 import android.os.Bundle;
 import android.support.annotation.StringRes;
 import android.view.View;
 
+import com.hkm.ezwebview.app.WebviewCommentBox;
 import com.hkm.r141ez.R;
 
 /**
- * Created by hesk on 23/7/15.
+ * HKM Invention 2015
+ * Created by hesk on 8/7/2015.
  */
 public class commentbox extends WebviewCommentBox {
+    public static commentbox B(Bundle e) {
+        final commentbox h = new commentbox();
+        h.setArguments(e);
+        return h;
+    }
+
     //private String url_id;
     private int fragment_comment_box_type;
-
-    public static commentbox B(final Bundle b) {
-        final commentbox t = new commentbox();
-        t.setArguments(b);
-        return t;
-    }
 
     public static Bundle fbIntent(final @StringRes int title, final String id_comment) {
         final Bundle n = new Bundle();
@@ -32,18 +35,15 @@ public class commentbox extends WebviewCommentBox {
         return R.layout.webviewsimple;
     }
 
-
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         fragment_comment_box_type = getArguments().getInt(WebviewCommentBox.REQUEST_TYPE);
         //  url_id = getArguments().getString(COMMENT_BOX_ID);
         initBinding(view);
-
         setup_commentbox(getArguments().getString(COMMENT_BOX_ID));
     }
 
     public void complete() {
         completeloading();
     }
-
 }

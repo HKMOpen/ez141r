@@ -22,8 +22,6 @@ public class LifeCycleApp extends AppBase {
         // Save the current Installation to Parse.
         initParseDotCom();
         googleAnalytics();
-        initializeDisQus();
-
         initMobileConfiguration();
     }
     private void initMobileConfiguration() {

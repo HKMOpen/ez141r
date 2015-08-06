@@ -7,7 +7,7 @@ dependencies {
     compile fileTree(dir: '../lib', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:22.2.0'
     compile 'com.hkm.slidingmenulib:slidingmenulib:1.6.3'
-    compile 'com.squareup.picasso:picasso:2.5.0'
+    compile 'com.squareup.picasso:picasso:2.5.2'
     compile 'com.ogaclejapan.smarttablayout:utils-v13:1.2.0@aar'
     compile 'com.ogaclejapan.smarttablayout:library:1.2.0@aar'
     compile 'com.lsjwzh:materialloadingprogressbar:0.5.3-RELEASE'
@@ -17,12 +17,14 @@ dependencies {
     compile 'com.github.chenupt.android:dragtoplayout:1.2.1@aar'
     compile 'ToolBarLib:advancedtoolbar:0.3.5'
     compile 'com.squareup:otto:1.3.8'
+    compile 'com.github.kikoso:SwipeableCards:1.1-RELEASE@aar'
     compile 'com.marshalchen.ultimaterecyclerview:library:0.3.11'
+    compile 'com.hkm.ezwebview:library:1.0.0'
     // compile "de.halfbit:tinybus:3.0.+"
-    //compile project(':ultimaterecyclerview')
+    // compile project(':ultimaterecyclerview')
     // compile "de.halfbit:tinybus-extensions:3.0.+"
-    //  compile project(':slidingmenulib')
-    //  compile project(':SDKLibraryHB')
+    // compile project(':slidingmenulib')
+    // compile project(':SDKLibraryHB')
 }
 
 android {
@@ -56,7 +58,7 @@ android {
 
     productFlavors {
         production {
-            applicationId "com.hkm.141Rs"
+            applicationId "com.hkm.q14Rs"
             versionName defaultConfig.versionName
             //signingConfig signingConfigs.appdeploykey
 
@@ -70,7 +72,7 @@ android {
             buildConfigField "String", "DFP_LIST_UNIT_ID", "\"${configConstants.DFP_LIST_UNIT_ID}\""
         }
         gtesting {
-            applicationId "com.hkm.141RR"
+            applicationId "com.hkm.m141r"
             versionName defaultConfig.versionName
             // signingConfig signingConfigs.appdeploykey
 

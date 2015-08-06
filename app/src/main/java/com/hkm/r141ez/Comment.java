@@ -6,6 +6,8 @@ import android.support.annotation.StringRes;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 
+import com.hkm.ezwebview.Util.Fx9C;
+import com.hkm.ezwebview.Util.In32;
 import com.hkm.r141ez.details.commentbox;
 import com.hkm.r141ez.life.LifeCycleApp;
 import com.hkm.slidingmenulib.layoutdesigns.singleDetailPost;

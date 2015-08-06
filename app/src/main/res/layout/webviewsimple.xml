@@ -2,20 +2,20 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:fab="http://schemas.android.com/apk/res-auto"
     xmlns:tool="http://schemas.android.com/tools"
-    android:id="@+id/simple_frame"
+    android:id="@id/wv_simple_frame"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:visibility="invisible">
 
-    <com.hkm.r141ez.details.webviewleakfix.NonLeakingWebView
-        android:id="@+id/content_block"
+    <com.hkm.ezwebview.webviewleakfix.NonLeakingWebView
+        android:id="@id/wv_content_block"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="gone"
         tool:ignore="WebViewLayout" />
 
     <com.lsjwzh.widget.materialloadingprogressbar.CircleProgressBar
-        android:id="@+id/simple_process"
+        android:id="@id/wv_simple_process"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
